@@ -1,60 +1,72 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <Header></Header>
+    <div class="container">
+      <a class="container__btn" href="https://github.com/wemboava/show-menu-when-scrolling-up">&#9733;  GitHub</a>
+    </div>
+    <footer class="footer">Made by <a class="footer__link" href="https://github.com/wemboava/">Willian Emboava</a></footer>
   </div>
 </template>
 
 <script>
+import Header from './components/Header.vue'
 export default {
   name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+
+  components: {
+    Header
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    margin: 0;
+  }
+  #app {
+    position: relative;
+  }
+  .container {
+    height: 400vh;
 
-h1, h2 {
-  font-weight: normal;
-}
+    display: flex;
+    justify-content: center;
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+    background-image: linear-gradient(to right top, #00ffad, #00dfe6, #00b6ff, #0083ff, #3c00ff);
+  
+    &__btn {
+      margin: 20px;
+      padding: 15px 25px;
+      
+      position: absolute;
+      top: 250px;
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+      border-radius: 5px;
+      color: #fff;
+      font-size: 22px;
+      text-decoration: none;
+      transition: all ease .2s;
+      
+      background-color: #1f1f1f;
+      box-shadow: 0px 5px 0px 0px rgb(0, 0, 0);
+        
+      &:hover {
+        transform: translate(0px, 5px);
+        -webkit-transform: translate(0px, 5px);
+        box-shadow: 0px 2px 0px 0px rgb(0, 0, 0);
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 100px);
+    font-family: monospace;
+    font-size: 18px;
 
-a {
-  color: #42b983;
-}
+    &__link {
+      color: #0083ff;
+      text-decoration: none;
+    }
+  }
 </style>
