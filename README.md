@@ -1,6 +1,10 @@
 # show-menu-when-scrolling-up
 
-> A Vue.js project
+> Directive using vue js to show the menu when the user scrolls up and hide when scrolling down using pure javascript
+
+## Example
+
+https://wemboava.github.io/show-menu-when-scrolling-up/
 
 ## Build Setup
 
