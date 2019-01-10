@@ -4,7 +4,6 @@ let lastScrollTop = 0
 const delta = 5
 
 const hasScrolled = element => {
-    console.log(element.offsetHeight)
     const top = document.body.scrollTop === 0
         ? document.documentElement.scrollTop 
         : document.body.scrollTop
