@@ -1,17 +1,19 @@
 <template>
-    <div v-reveal-on-scroll-up class="header"></div>    
+    <header v-vue-scrollup-menu class="header"></header>    
 </template>
+
 <script>
-    import revealOnScrollUp from '../common/directives/show-menu-scroll-up.js'
+    import vueScrollupMenu from 'vue-scrollup-menu'
 
     export default {
         name: 'Header',
 
         directives: {
-            revealOnScrollUp
+            vueScrollupMenu
         },
     }
 </script>
+
 <style lang="scss" scoped>
     .header {
         background-color: rgba(0, 0, 0, .4);
