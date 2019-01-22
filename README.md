@@ -6,21 +6,16 @@
 
 ![ezgif com-crop](https://user-images.githubusercontent.com/23389358/51559769-f6a63d80-1e69-11e9-8769-c2960bfc9f2b.gif)
 
-> Online example
+### Online link
 
 https://wemboava.github.io/show-menu-when-scrolling-up/
 
-## Build Setup
+## Getting Started
 
-``` bash
-# install dependencies
-npm install
+``` npm i vue-scrollup-menu ```
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+```vue
+<template>
+    <header v-vue-scrollup-menu class="header"></header>    
+</template>
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
