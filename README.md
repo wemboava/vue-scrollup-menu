@@ -12,7 +12,10 @@ https://wemboava.github.io/show-menu-when-scrolling-up/
 
 ## Getting Started
 
+### install
 ``` npm i vue-scrollup-menu ```
+
+### Use
 
 ```vue
 <template>
@@ -20,7 +23,7 @@ https://wemboava.github.io/show-menu-when-scrolling-up/
 </template>
 ```
 
-### Use
+### Import directive
 
 ```vue
 <script>
