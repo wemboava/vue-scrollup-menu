@@ -8,7 +8,7 @@
 
 ### Online demo
 
-https://wemboava.github.io/show-menu-when-scrolling-up/
+https://wemboava.github.io/vue-scrollup-menu
 
 ## Getting Started
 
